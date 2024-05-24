@@ -57,3 +57,156 @@ html {
   z-index: 150;
   transition: all 0.6s;
 }
+
+.change .navigation {
+  top: 0;
+  right: 0;
+  transform: rotateZ(0);
+}
+.nav-items {
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.change .nav-items {
+  visibility: visible;
+  transition: 0.5s 0.7s;
+}
+.navigation .section-border {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.change .navigation .section-border {
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.5s 0.7s;
+}
+
+.nav-items a {
+  font-size: 3rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  color: #eee;
+  margin: 1rem 0;
+  transition: color 0.5s;
+}
+.nav-items a:hover {
+  color: #fc8c05;
+}
+/* end of navigation */
+/* landing */
+.landing {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.section-bg-heading {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  text-align: center;
+  font-size: 3rem;
+  font-family: 'caveat', cursive;
+  color: #31363d;
+  opacity: 0.5s;
+}
+.logo {
+  position: absolute;
+  top: 4rem;
+  left: 5rem;
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+}
+.logo span:nth-child(1) {
+  color: #fff;
+}
+.logo span:nth-child(2) {
+  font-size: 5rem;
+  font-family: 'caveat', cursive;
+  font-weight: bold;
+  color: #fc8c05;
+}
+.banner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.section-border {
+  height: 55rem;
+  width: 0.3rem;
+  background-color: #bbb;
+  margin-right: 10rem;
+  position: relative;
+}
+.section-border::before {
+  content: '';
+  width: 3rem;
+  height: 3rem;
+  border: 0.2rem solid #bbb;
+  border-radius: 50%;
+  background-color: #1d222a;
+  position: absolute;
+  left: -1.65rem;
+  top: -3rem;
+}
+.section-border::after {
+  content: '';
+  width: 3rem;
+  height: 3rem;
+  border: 0.2rem solid #bbb;
+  border-radius: 50%;
+  background-color: #1d222a;
+  position: absolute;
+  left: 1.65rem;
+  bottom: -3rem;
+}
+.developer-info {
+  margin-right: 15rem;
+}
+.greeting {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 0.1rem;
+}
+
+.greeting span {
+  color: #fc8c05;
+}
+.name {
+  font-size: 10rem;
+  width: 60rem;
+  margin: 4rem 0 2rem 0;
+  color: #fff;
+  text-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+}
+
+.name span {
+  color: #fc8c05;
+}
+.prof {
+  font-size: 1.8rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 0.2rem;
+  margin-bottom: 6rem;
+}
+
+.prof span {
+  font-family: 'caveat', cursive;
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  margin-left: 1.2rem;
+}
